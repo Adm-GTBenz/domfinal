@@ -1,0 +1,248 @@
+/* Styles généraux */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+  line-height: 1.6;
+  
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  color: #00bfff;
+  padding: 1em;
+  border-radius: 15px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1em;
+}
+
+.nav-links a {
+  color: #00bfff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #fff;
+}
+
+.burger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.burger span {
+  background: #fff;
+  height: 3px;
+  width: 25px;
+  margin: 4px;
+}
+
+/* Section du carrousel avec texte */
+.carousel {
+  width: 100%;
+  height: 100vh; /* Prend toute la hauteur visible */
+  overflow: hidden;
+  position: relative;
+  border-radius: 15px; /* Coins arrondis */
+  border: 3px solid #00bfff; /* Bordure bleu clair */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Ombre légère bleu clair */
+}
+
+.carousel-images {
+  display: flex;
+  width: 300%; /* 3 images à défiler */
+  animation: slide 9s infinite; /* Défiler automatiquement */
+}
+
+.carousel-images img {
+  width: 100%;
+  height: 100vh; /* Chaque image prend toute la hauteur visible */
+  object-fit: cover; /* L'image s'adapte sans déformation */
+  border-radius: 15px; /* Coins arrondis */
+  border: 3px solid #00bfff; /* Bordure bleu clair */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Ombre légère bleu clair */
+}
+
+
+/* Superposition sombre */
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Couche sombre à 50% d'opacité */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff; /* Texte en blanc */
+  padding: 1em;
+  border-radius: 15px; /* Coins arrondis pour la superposition */
+  border: 3px solid #00bfff; /* Bordure bleu clair */
+}
+
+.carousel-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.carousel-overlay p {
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+
+.carousel-overlay .cta-btn {
+  background: #00bfff; /* Bouton bleu clair */
+  color: #000;
+  padding: 0.7em 1.5em;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.carousel-overlay .cta-btn:hover {
+  background: #008ecc; /* Bleu plus foncé au survol */
+}
+
+/* Animation pour défiler */
+@keyframes slide {
+  0% { transform: translateX(0%); }
+  33% { transform: translateX(-100%); }
+  66% { transform: translateX(-200%); }
+  100% { transform: translateX(0%); }
+}
+
+/* Sections */
+.section {
+  margin: 2em auto;
+  padding: 2em;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  background-color: #222;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+}
+
+footer {
+  text-align: center;
+  padding: 1.5em;
+  background-color: #111; /* Fond sombre */
+  color: #fff; /* Texte blanc */
+  border-radius: 15px; /* Coins arrondis */
+  border: 3px solid #00bfff; /* Bordure bleu clair */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Ombre légère bleu clair */
+  margin: 20px auto;
+  width: 90%; /* Ajuste la largeur pour éviter qu'il colle aux bords */
+  font-size: 0.9em; /* Texte un peu plus petit pour le footer */
+}
+
+/* Lien dans le footer */
+footer a {
+  color: #00bfff; /* Texte bleu clair */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #fff; /* Passe en blanc au survol */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+/* Section Infos Utiles */
+.infos-utiles {
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #111; /* Fond sombre */
+  color: #fff;
+  border-radius: 15px; /* Coins arrondis */
+  border: 3px solid #00bfff; /* Bordure bleu clair */
+  width: 90%; /* Largeur de la section */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+  text-align: center;
+}
+
+/* Titre de la section */
+.infos-utiles h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00bfff; /* Texte bleu clair */
+}
+
+/* Conteneur des cartes */
+.info-sections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Style des cartes */
+.info-card {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 15px;
+  border: 2px solid #00bfff; /* Bordure bleu clair */
+  width: 300px; /* Taille fixe pour uniformité */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+  text-align: left;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-5px); /* Légère animation au survol */
+  box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+}
+
+/* Titre dans les cartes */
+.info-card h3 {
+  font-size: 1.5rem;
+  color: #00bfff; /* Texte bleu clair */
+  margin-bottom: 10px;
+}
+
+/* Texte des cartes */
+.info-card p {
+  font-size: 1rem;
+  color: #ccc; /* Texte gris clair */
+  line-height: 1.5;
+}
