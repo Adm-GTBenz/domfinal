@@ -13,7 +13,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #111;
+  background-color: #4e4c4c;
   color: #00bfff;
   padding: 1em;
   border-radius: 15px;
@@ -48,7 +48,7 @@ body {
 }
 
 .burger span {
-  background: #fff;
+  background: #00d5ff;
   height: 3px;
   width: 25px;
   margin: 4px;
@@ -56,7 +56,7 @@ body {
 
 /* Section du carrousel avec texte */
 .carousel {
-  width: 100%;
+  width: 98%;
   height: 100vh; /* Prend toute la hauteur visible */
   overflow: hidden;
   position: relative;
@@ -129,7 +129,7 @@ body {
 /* Animation fluide */
 @keyframes slide {
   0% { transform: translateX(0); }
-  50% { transform: translateX(-70%); } /* Boucle jusqu'à la dernière image */
+  50% { transform: translateX(-50%); } /* Boucle jusqu'à la dernière image */
 }
 
 /* Ajout d'une durée plus lente */
@@ -137,20 +137,129 @@ body {
   animation: slide 30s infinite; /* Défiler toutes les 15 secondes */
 }
 
-/* Sections */
-.section {
-  margin: 2em auto;
-  padding: 2em;
-  border-radius: 15px;
-  border: 2px solid #00bfff;
-  background-color: #222;
-  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Hero Section */
+#section {
+  height: 100vh; /* Prend toute la hauteur de l'écran */
+  background: url('./images/mlgoslm.jpg') no-repeat center center/cover; /* Image de fond */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+.section_oslm h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7); /* Petit effet d'ombre */
+}
+
+.section_oslm p {
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.section_oslm button {
+  padding: 0.8rem 2rem;
+  background-color: #00bfff;
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.section_oslm button:hover {
+  background-color: #008ecc; /* Couleur plus foncée au survol */
+}
+
+/* Section Présentation */
+#presentation {
+  background-color: #000; /* Fond noir */
+  color: white; /* Texte blanc */
+  padding: 50px 20px; /* Espacement intérieur */
+  text-align: center; /* Centre tout le texte */
+}
+
+#presentation .container {
+  max-width: 800px; /* Largeur maximale pour que le texte ne soit pas trop large */
+  margin: 0 auto; /* Centre la section */
+}
+
+#presentation h2 {
+  font-size: 2.5rem; /* Taille du titre */
+  margin-bottom: 20px; /* Espace sous le titre */
+  text-transform: uppercase; /* Met le titre en majuscules */
+}
+
+#presentation p {
+  font-size: 1.2rem; /* Taille du texte */
+  line-height: 1.6; /* Hauteur de ligne pour un texte plus lisible */
+  margin-bottom: 20px; /* Espacement entre les paragraphes */
+}
+
+#coworking {
+  background-color: #000000;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#coworking h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+#coworking p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+#coworking .features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  max-width: 200px;
+  text-align: center;
+}
+
+.feature i {
+  font-size: 2rem;
+  color: #007bff;
+  margin-bottom: 10px;
+}
+
+.feature h3 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+#coworking .images {
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+}
+
+#coworking .images img {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -190,6 +299,10 @@ footer a:hover {
   .burger {
     display: flex;
   }
+}
+
+.lgo {
+  width: 100px;
 }
 
 /* Section Infos Utiles */
@@ -251,12 +364,8 @@ footer a:hover {
   line-height: 1.5;
 }
 
-.lgo {
-  width: 100px;
-}
-
 #partenaires {
-  background-color: #1c1c1c; /* Fond sombre */
+  background-color: #fffb00; /* Fond sombre */
   padding: 50px 20px;
   text-align: center;
   color: white;
@@ -285,33 +394,66 @@ footer a:hover {
 
 .partenaires-grid img:hover {
   filter: grayscale(0); /* Couleur au survol */
+} 
+
+body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000; /* Fond noir pour bien faire ressortir les icônes */
 }
 
-#presentation {
-  background-color: #000000; /* Fond clair */
-  color: #333; /* Texte sombre */
-  padding: 50px 20px;
-  text-align: center;
+/* Section pour les animations */
+.background-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none; /* Les clics traversent cette div */
+  overflow: hidden; /* Empêche les icônes de déborder */
 }
 
-#presentation .container {
-  max-width: 800px;
-  margin: 0 auto;
+.background-icons .icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2; /* Rendre les icônes discrètes */
+  animation: float 10s infinite ease-in-out;
 }
 
-#presentation h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
-  color: #00b5ff; /* Bleu pour le titre */
+.background-icons .icon:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.background-icons .icon:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+.background-icons .icon:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s;
+}
+.background-icons .icon:nth-child(4) {
+  top: 30%;
+  left: 80%;
+  animation-delay: 6s;
 }
 
-#presentation p {
-  font-size: 1.2rem;
-  line-height: 1.8;
-  margin-bottom: 15px;
-  text-align: justify; /* Alignement justifié */
-}
-
-#presentation strong {
-  color: #00b5ff; /* Met en avant les mots clés */
+/* Animation flottante subtile */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

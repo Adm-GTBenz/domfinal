@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Accueil - Molengeek</title>
   <link rel="stylesheet" href="Domfinal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
-      <a href="DOMfinal.html"><img class="lgo" src="./images/lgomlg.png" alt=""></a>
+      <a href="DOMfinal.html"><img class="lgo" src="./images/molengeek.png" alt=""></a>
     </div>
     <ul class="nav-links">
       <li><a href="DOMfinal.html">Accueil</a></li>
@@ -33,11 +34,15 @@
     </div>
   </div>  
 
-  <!-- Section d'informations -->
-  <section class="section">
-    <h2>Bienvenue chez Molengeek</h2>
-    <p>Explorez nos formations innovantes et rejoignez notre communauté dynamique !</p>
-  </section>
+  <!-- Page d'accueil -->
+<section id="section">
+  <div class="section_oslm">
+    <h1>Bienvenue chez Molengeek</h1>
+    <p>Découvrez nos formations, nos activités et notre espace coworking.</p>
+    <button id="learn-more">En savoir plus</button>
+  </div>
+</section>
+
 
   <section id="presentation">
     <div class="container">
@@ -48,6 +53,36 @@
       <p>
         Nous sommes composés de trois piliers principaux : un <strong>espace de coworking</strong>, des <strong>programmes de formation à long et court terme</strong> et des <strong>évènements dynamiques</strong>, tels que des Hackathons, des Geektalks, etc.
       </p>
+    </div>
+  </section> 
+  
+  <section id="coworking">
+    <div class="container">
+      <h2>Espace Coworking</h2>
+      <p>
+        Découvrez un espace moderne et dynamique où vous pouvez travailler, collaborer et innover avec d'autres professionnels. Chez MolenGeek, notre espace coworking offre tout ce dont vous avez besoin pour réussir.
+      </p>
+      <div class="features">
+        <div class="feature">
+          <i class="fas fa-wifi"></i>
+          <h3>Connexion rapide</h3>
+          <p>Accédez à une connexion Wi-Fi haut débit.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-coffee"></i>
+          <h3>Ambiance conviviale</h3>
+          <p>Profitez d’un espace chaleureux avec café à disposition.</p>
+        </div>
+        <div class="feature">
+          <i class="fas fa-desktop"></i>
+          <h3>Équipements modernes</h3>
+          <p>Ordinateurs, écrans et tout le nécessaire pour travailler efficacement.</p>
+        </div>
+      </div>
+      <div class="images">
+        <img src="./images/cwr.png" alt="Espace coworking 1">
+        <img src="./images/cwr2.png" alt="Espace coworking 2">
+      </div>
     </div>
   </section>  
 
@@ -65,6 +100,21 @@
       <img src="./images/paribas.png" alt="BNP Paribas">
     </div>
   </section>  
+
+  <div class="background-icons">
+    <img src="./images/circuit.png" class="icon" alt="Circuit Icon">
+    <img src="./images/laptop.jpeg" class="icon" alt="Laptop Icon">
+    <img src="./images/cloud.png" class="icon" alt="Cloud Icon">
+    <img src="./images/code.png" class="icon" alt="Code Icon">
+  </div>
+  
+
+  <section id="map-section">
+    <h2>Où nous trouver ?</h2>
+    <p>Molengeek est situé au cœur de Molenbeek, Bruxelles. Venez nous rendre visite !</p>
+    <div id="map"></div>
+  </section>
+    
 
   <!-- Footer -->
   <footer>

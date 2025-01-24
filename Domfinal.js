@@ -6,6 +6,11 @@ burger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
+// Scroll vers une section spécifique quand on clique sur le bouton
+document.getElementById('learn-more').addEventListener('click', () => {
+  document.querySelector('#presentation').scrollIntoView({ behavior: 'smooth' });
+});
+
 /// Script pour le carrousel
 document.addEventListener("DOMContentLoaded", () => {
   const carouselImages = document.querySelector(".carousel-images");
