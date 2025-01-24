@@ -254,3 +254,64 @@ footer a:hover {
 .lgo {
   width: 100px;
 }
+
+#partenaires {
+  background-color: #1c1c1c; /* Fond sombre */
+  padding: 50px 20px;
+  text-align: center;
+  color: white;
+}
+
+#partenaires h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #00b5ff; /* Bleu pour le titre */
+}
+
+.partenaires-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.partenaires-grid img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(100%); /* Effet noir et blanc */
+  transition: filter 0.3s ease;
+}
+
+.partenaires-grid img:hover {
+  filter: grayscale(0); /* Couleur au survol */
+}
+
+#presentation {
+  background-color: #000000; /* Fond clair */
+  color: #333; /* Texte sombre */
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#presentation .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#presentation h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #00b5ff; /* Bleu pour le titre */
+}
+
+#presentation p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 15px;
+  text-align: justify; /* Alignement justifié */
+}
+
+#presentation strong {
+  color: #00b5ff; /* Met en avant les mots clés */
+}
