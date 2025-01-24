@@ -250,3 +250,64 @@ footer a:hover {
 .lgo {
   width: 10px;
 }
+
+#formations {
+  padding: 50px 20px;
+  background-color: #000000;
+  text-align: center;
+}
+
+#formations .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#formations h2 {
+  font-size: 2.5rem;
+  color: #00b5ff;
+  margin-bottom: 30px;
+}
+
+.category h3 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  border: 2px solid #00b5ff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.card h4 {
+  font-size: 1.5rem;
+  color: #00b5ff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 1rem;
+  color: #555;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover; /* Ajuste l'image pour qu'elle remplisse l'espace sans se déformer */
+  border-bottom: 2px solid #00b5ff;
+  border-radius: 8px 8px 0 0; /* Arrondi en haut pour matcher la carte */
+  margin-bottom: 10px;
+}
