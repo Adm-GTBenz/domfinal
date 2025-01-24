@@ -6,26 +6,49 @@ burger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
 
-// Script pour le carrousel
-document.addEventListener('DOMContentLoaded', () => {
-  const carouselImages = document.querySelector('.carousel-images');
-  const totalImages = carouselImages.children.length;
-  let currentIndex = 0;
+/// Script pour le carrousel
+document.addEventListener("DOMContentLoaded", () => {
+  const carouselImages = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  const totalImages = images.length;
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % totalImages;
-    carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }, 3000); // Change toutes les 3 secondes
+  let index = 0;
+
+  function moveCarousel() {
+    index++;
+    if (index >= totalImages) {
+      carouselImages.style.transition = "none"; // Supprime la transition
+      carouselImages.style.transform = "translateX(0)"; // Retour au début instantanément
+      index = 0; // Reset de l'index
+    } else {
+      carouselImages.style.transition = "transform 1s linear"; // Remet la transition
+      carouselImages.style.transform = `translateX(-${index * 100}%)`;
+    }
+  }
+
+  setInterval(moveCarousel, 4000); // Défiler toutes les 4 secondes
 });
 
-// Script pour le carrousel
-document.addEventListener('DOMContentLoaded', () => {
-  const carouselImages = document.querySelector('.carousel-images');
-  const totalImages = carouselImages.children.length;
-  let currentIndex = 0;
 
-  setInterval(() => {
-    currentIndex = (currentIndex + 1) % totalImages;
-    carouselImages.style.transform = `translateX(-${currentIndex * 100}%)`;
-  }, 15000); // Change toutes les 15 secondes
+document.addEventListener("DOMContentLoaded", () => {
+  const carouselImages = document.querySelector(".carousel-images");
+  const images = document.querySelectorAll(".carousel-images img");
+  const totalImages = images.length;
+
+  let index = 0;
+
+  function moveCarousel() {
+    index++;
+    if (index >= totalImages) {
+      carouselImages.style.transition = "none"; // Supprime la transition
+      carouselImages.style.transform = "translateX(0)"; // Retour au début instantanément
+      index = 0; // Reset de l'index
+    } else {
+      carouselImages.style.transition = "transform 1s linear"; // Remet la transition
+      carouselImages.style.transform = `translateX(-${index * 100}%)`;
+    }
+  }
+
+  setInterval(moveCarousel, 4000); // Défiler toutes les 4 secondes
 });
+

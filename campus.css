@@ -246,3 +246,7 @@ footer a:hover {
   color: #ccc; /* Texte gris clair */
   line-height: 1.5;
 }
+
+.lgo {
+  width: 100px;
+}

@@ -65,10 +65,11 @@ body {
   box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Ombre légère bleu clair */
 }
 
+/* Images du carrousel */
 .carousel-images {
   display: flex;
-  width: 300%; /* 3 images à défiler */
-  animation: slide 9s infinite; /* Défiler automatiquement */
+  width: 300%; /* 3 images */
+  transition: transform 1s linear; /* Douce transition entre les images */
 }
 
 .carousel-images img {
@@ -125,17 +126,15 @@ body {
   background: #008ecc; /* Bleu plus foncé au survol */
 }
 
-/* Animation pour défiler */
+/* Animation fluide */
 @keyframes slide {
-  0% { transform: translateX(0%); }
-  33% { transform: translateX(-100%); }
-  66% { transform: translateX(-200%); }
-  100% { transform: translateX(0%); }
+  0% { transform: translateX(0); }
+  50% { transform: translateX(-70%); } /* Boucle jusqu'à la dernière image */
 }
 
 /* Ajout d'une durée plus lente */
 .carousel-images {
-  animation: slide 15s infinite; /* Défiler toutes les 15 secondes */
+  animation: slide 30s infinite; /* Défiler toutes les 15 secondes */
 }
 
 /* Sections */
@@ -250,4 +249,8 @@ footer a:hover {
   font-size: 1rem;
   color: #ccc; /* Texte gris clair */
   line-height: 1.5;
+}
+
+.lgo {
+  width: 100px;
 }
