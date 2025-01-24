@@ -250,3 +250,58 @@ footer a:hover {
 .lgo {
   width: 100px;
 }
+
+/* Section Campus */
+#campus {
+  padding: 50px 20px;
+  background-color: #000000;
+}
+
+#campus h1 {
+  text-align: center;
+  color: #00b5ff;
+  margin-bottom: 20px;
+}
+
+#campus p {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #555;
+}
+
+.campus {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  background: #242323;
+  border: 2px solid #00bfff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.campus img {
+  width: 40%;
+  object-fit: cover;
+}
+
+.campus-content {
+  padding: 20px;
+  width: 60%;
+}
+
+.campus-content h2 {
+  color: #00b5ff;
+  margin-bottom: 10px;
+}
+
+.campus-content p {
+  color: #555;
+  line-height: 1.6;
+}
+
+.campus:hover {
+  transform: scale(1.03); /* Agrandissement léger au survol */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
