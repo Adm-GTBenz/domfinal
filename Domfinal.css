@@ -365,7 +365,7 @@ footer a:hover {
 }
 
 #partenaires {
-  background-color: #fffb00; /* Fond sombre */
+  background-color: #000000; /* Fond sombre */
   padding: 50px 20px;
   text-align: center;
   color: white;
@@ -411,7 +411,7 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 100;
   pointer-events: none; /* Les clics traversent cette div */
   overflow: hidden; /* Empêche les icônes de déborder */
 }
@@ -420,7 +420,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-  opacity: 0.2; /* Rendre les icônes discrètes */
+    /* Rendre les icônes discrètes */
   animation: float 10s infinite ease-in-out;
 }
 
@@ -456,4 +456,54 @@ body {
   100% {
     transform: translateY(0);
   }
+}
+
+/* Section "Où nous trouver ?" */
+#ou-nous-trouver {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #000; /* Fond noir */
+  color: white;
+}
+
+#ou-nous-trouver h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#ou-nous-trouver p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  position: relative;
+}
+
+footer .footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer .social-icons {
+  margin-top: 10px;
+}
+
+footer .social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+footer .social-icons img {
+  width: 40px;
+  height: 33px;
+  filter: invert(1); /* Pour que les icônes ressortent sur un fond sombre */
 }
