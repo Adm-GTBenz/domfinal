@@ -1,0 +1,387 @@
+/* Styles généraux */
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4e4c4c;
+    color: #00bfff;
+    padding: 1em;
+    border-radius: 15px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links li {
+    margin: 0 1em;
+  }
+  
+  .nav-links a {
+    color: #00bfff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #fff;
+  }
+  
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .burger span {
+    background: #fff;
+    height: 3px;
+    width: 25px;
+    margin: 4px;
+  }
+
+  /* Responsive */
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
+  
+  /* Section principale */
+  .about-section {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  /* Titre de la section */
+  .about-section h2 {
+    font-size: 2.5rem;
+    color: #00bfff;
+    margin-bottom: 30px;
+  }
+  
+  /* Conteneur des cartes */
+  .cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  /* Style des cartes */
+  .about-card {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px solid #00bfff;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+  }
+  
+  /* Titre de la carte */
+  .about-card h3 {
+    font-size: 1.5rem;
+    color: #00bfff;
+    margin-bottom: 10px;
+  }
+  
+  /* Texte dans les cartes */
+  .about-card p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  /* Images dans les cartes */
+  .about-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 2px solid #00bfff;
+    border-radius: 8px 8px 0 0;
+    margin-bottom: 10px;
+  }  
+
+/* Styles généraux de la page "À propos" */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+}
+
+/* Styles pour les cards "À propos" */
+.about-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border: 2px solid #00f;
+    border-radius: 8px;
+    padding: 20px;
+    width: 100%;
+    max-width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card-body {
+    padding-top: 15px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .about-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+footer {
+    text-align: center;
+    padding: 1.5em;
+    background-color: #111; /* Fond sombre */
+    color: #fff; /* Texte blanc */
+    border-radius: 15px; /* Coins arrondis */
+    border: 3px solid #00bfff; /* Bordure bleu clair */
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3); /* Ombre légère bleu clair */
+    margin: 20px auto;
+    width: 90%; /* Ajuste la largeur pour éviter qu'il colle aux bords */
+    font-size: 0.9em; /* Texte un peu plus petit pour le footer */
+  }
+  
+  /* Lien dans le footer */
+  footer a {
+    color: #00bfff; /* Texte bleu clair */
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    color: #fff; /* Passe en blanc au survol */
+  }
+
+  /* Footer */
+  footer {
+    background-color: #111;
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    position: relative;
+  }
+  
+  footer .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  footer .social-icons {
+    margin-top: 10px;
+  }
+  
+  footer .social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+  }
+  
+  footer .social-icons img {
+    width: 40px;
+    height: 33px;
+    filter: invert(1); /* Pour que les icônes ressortent sur un fond sombre */
+  }
+
+  * Section pour les animations */
+.background-icons {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  pointer-events: none; /* Les clics traversent cette div */
+  overflow: hidden; /* Empêche les icônes de déborder */
+}
+
+.background-icons .icon {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  opacity: 0.2; /* Rendre les icônes discrètes */
+  animation: float 10s infinite ease-in-out;
+}
+
+.background-icons .icon:nth-child(1) {
+  top: 10%;
+  left: 20%;
+  animation-delay: 0s;
+}
+.background-icons .icon:nth-child(2) {
+  top: 50%;
+  left: 70%;
+  animation-delay: 2s;
+}
+.background-icons .icon:nth-child(3) {
+  top: 80%;
+  left: 40%;
+  animation-delay: 4s;
+}
+.background-icons .icon:nth-child(4) {
+  top: 30%;
+  left: 80%;
+  animation-delay: 6s;
+}
+
+/* Animation flottante subtile */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.rotate-animation {
+  animation: rotate 5s linear infinite; /* Rotation lente et infinie */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+  /* Animation de survol sur les cartes */
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 191, 255, 0.5);
+  }
+
+  /* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: white;
+    line-height: 1.6;
+}
+
+/* Section "À propos" */
+#about {
+    padding: 40px;
+    text-align: center;
+}
+
+/* Row d'images */
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.image-row img {
+    width: 23%;
+    height: auto;
+    border: 3px solid #00bfff;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+/* Texte */
+.text-section {
+    margin: 30px 0;
+    padding: 20px;
+    border: 2px solid #00bfff;
+    border-radius: 15px;
+    background-color: #222;
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+/* Si tu veux ajouter des animations */
+.text-section p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .image-row {
+        flex-direction: column;
+    }
+
+    .image-row img {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
