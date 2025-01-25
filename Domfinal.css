@@ -202,6 +202,87 @@ body {
   margin-bottom: 20px; /* Espacement entre les paragraphes */
 }
 
+#activites ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#activites li {
+  margin: 0.5em 0;
+  color: #ccc;
+}
+
+#activites h2 {
+  color: #00bfff;
+}
+
+#activites .card {
+  background-color: #222;
+  padding: 1.5em;
+  width: 92%;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+#activites ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#activites li {
+  margin: 0.5em 0;
+  color: #ccc;
+}
+
+#activites h2 {
+  color: #00bfff;
+}
+
+#formations .formations-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formation {
+  background-color: #222;
+  padding: 1.5em;
+  width: 48%;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+}
+
+.formation h3 {
+  color: #00bfff;
+}
+
+.formation p {
+  color: #ccc;
+}
+
+#formations .card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #222;
+  padding: 1.5em;
+  width: 48%;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+.card h3 {
+  color: #00bfff;
+}
+
+.card p {
+  color: #ccc;
+}
+
 #coworking {
   background-color: #000000;
   padding: 50px 20px;
@@ -420,7 +501,7 @@ body {
   position: absolute;
   width: 50px;
   height: 50px;
-    /* Rendre les icônes discrètes */
+  opacity: 0.2; /* Rendre les icônes discrètes */
   animation: float 10s infinite ease-in-out;
 }
 
@@ -458,6 +539,46 @@ body {
   }
 }
 
+.rotate-animation {
+  animation: rotate 5s linear infinite; /* Rotation lente et infinie */
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.btn {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+#video-youtube {
+  padding: 2em;
+  background-color: #111;
+  border: 2px solid #00bfff;
+  border-radius: 15px;
+  margin-bottom: 2em;
+}
+
+ 
+
 /* Section "Où nous trouver ?" */
 #ou-nous-trouver {
   text-align: center;
@@ -476,6 +597,40 @@ body {
   line-height: 1.5;
   max-width: 600px;
   margin: 0 auto;
+}
+
+#map-container iframe {
+  border-radius: 15px;
+}
+
+#map .card {
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+  width: 92%;
+}
+
+#faq .card-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.card {
+  background-color: #222;
+  padding: 1.5em;
+  border-radius: 15px;
+  border: 2px solid #00bfff;
+  width: 30%;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+.card h3 {
+  color: #00bfff;
+}
+
+.card p {
+  color: #ccc;
 }
 
 /* Footer */
@@ -507,3 +662,4 @@ footer .social-icons img {
   height: 33px;
   filter: invert(1); /* Pour que les icônes ressortent sur un fond sombre */
 }
+
