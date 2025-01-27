@@ -610,6 +610,26 @@ body {
   width: 92%;
 }
 
+.map-container {
+  position: relative;
+  width: 100%; /* Le conteneur prend toute la largeur */
+  padding-top: 56.25%; /* Rapport d'aspect 16:9 */
+  border: 2px solid #00bfff;
+  border-radius: 15px;
+  background-color: #111; /* Couleur de fond pour mieux intégrer */
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* L'iframe prend la largeur du conteneur */
+  height: 100%; /* L'iframe prend la hauteur du conteneur */
+  border: 0;
+  border-radius: 15px;
+}
+
 #faq .card-container {
   display: flex;
   gap: 20px;
