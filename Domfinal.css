@@ -304,7 +304,7 @@ body {
 #coworking .features {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 10px;
   margin-bottom: 40px;
 }
 
@@ -333,14 +333,38 @@ body {
 #coworking .images {
   display: flex;
   justify-content: center;
-  gap: 80px;
+  gap: 30px;
 }
 
 #coworking .images img {
-  width: 300px;
+  width: 200px;
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-container {
+  display: flex; /* Place les images côte à côte */
+  justify-content: space-between; /* Espace entre les images */
+  flex-wrap: wrap; /* Permet de passer à la ligne si l'écran est trop petit */
+  gap: 10px; /* Espace entre les images */
+  padding: 10px;
+  border: 2px solid #00bfff;
+  border-radius: 15px;
+  background-color: #111; /* Fond noir */
+}
+
+.responsive-image {
+  width: 48%; /* Chaque image occupe 48% de la largeur du conteneur */
+  height: auto; /* Conserve le ratio d'aspect de l'image */
+  border: 2px solid #00bfff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
+  transition: transform 0.3s ease; /* Animation hover */
+}
+
+.responsive-image:hover {
+  transform: scale(1.05); /* Légère mise en avant au survol */
 }
 
 footer {
@@ -630,9 +654,13 @@ body {
   border-radius: 15px;
 }
 
+.cwk {
+  width: 5px;
+}
+
 #faq .card-container {
   display: flex;
-  gap: 20px;
+  gap: 15px;
   justify-content: center;
 }
 
@@ -641,7 +669,7 @@ body {
   padding: 1.5em;
   border-radius: 15px;
   border: 2px solid #00bfff;
-  width: 30%;
+  width: 17%;
   box-shadow: 0 4px 8px rgba(0, 191, 255, 0.3);
 }
 
